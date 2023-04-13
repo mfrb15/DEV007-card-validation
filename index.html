@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tarjeta de crédito válida</title>
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body>
+
+    <h1> Ingrese su tarjeta de credito  </h1>
+    <section class="tarjetaDiseño">
+    <div class="tdcFront">
+      <img src="../images/tdcfront.jpg" alt="Frente de la tarjeta">
+      <div class="datosFrenteTarjeta">
+        <p class="numerodeTarjeta">0000 0000 0000 0000</p>
+          <div class="nombreDeTarjetaYDate"> 
+           <p class="nombreDeTarjeta">Mafer Rodriguez</p>
+           <p class="fechaDeTarjeta">00/00</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <img src="../images/tdcback.jpg" alt="Dorso de Tarjeta">
+        <div class="tdcBack">
+          <p class="cvcTarjeta"> 000 </p>
+        </div>
+      </div>
+    </div>
+    </section>
+
+
+    <section class="form-group">
+          <label for="input-name">Nombre de la Tajeta </label>
+          <input type="text" class="input" id="input-name" placeholder="MAFER RODRIGUEZ"> 
+        </section>
+        
+        <section class="form-group">
+        <label for="input-number">Número de Tarjeta </label>
+        <input type="text" class="input" id="input-number" placeholder="0000 0000 0000 0000">
+      </section>
+
+
+      <section class="form-group">
+        <div>
+          <label for="input-month" class="label">Exp. Date (MM/YY) </label>
+          <div> 
+            <input type="text" class="input" id="input-month" placeholder="MM">
+            <input type="text" class="input" id="input-year" placeholder="YY">
+          </div>
+        </div>
+            <div>
+              <label for="input-cvc" class="label"> CVC </label>
+              <input type="text" class="input" id="input-cvc" placeholder="123">
+            </div>
+      </section>
+      <section class="form-group">
+        <button class="button" type="submit" id="enviar">Confirmar</button>
+      </section>
+    </section>
+
+    <header></header>
+    <main></main>
+    <footer></footer>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
