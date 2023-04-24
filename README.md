@@ -1,4 +1,4 @@
-# Gift amor.
+# Gift Amor.
 
 Gift amor es una app que permite a los usuarios realizar compras de regalos personalizados para enviar a sus seres queridos y amigos. 
 
