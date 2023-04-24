@@ -30,7 +30,7 @@ botonEnviar.addEventListener("click", () => {
       h1tdc.innerHTML = "Resultado de la operación";
       sectionPadre.innerHTML = `<section class="maskify">
    <div class="pagoProcesado" id="pagoAprobado">
-   <img src="../images/aprobado.png" class="iconoAprobado" alt="icono de Aprobado">
+   <img src="./images/aprobado.png" class="iconoAprobado" alt="icono de Aprobado">
    <p class="mensajeGraciasporsucompra">¡Gracias por tu compra!</p>
    <p id="input-number-maskify"></p>
    </section>`;
@@ -42,7 +42,7 @@ botonEnviar.addEventListener("click", () => {
       h1tdc.innerHTML = "Resultado de la operación";
       sectionPadre.innerHTML = `<section class="maskify">
    <div class="pagoProcesado" id="pagoAprobado">
-   <img src="../images/rechazado.png" class="iconoAprobado" alt="icono de Aprobado">
+   <img src="./images/rechazado.png" class="iconoAprobado" alt="icono de Aprobado">
    <p class="mensajeGraciasporsucompra">¡Error, Tarjeta Inválida!</p>
    <p id="input-number-maskify"></p>
    </section>`;

@@ -25,10 +25,11 @@ body {
 .diseñoMain {
     background-image: url("./images/logogiftamor.png");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: relative;
     background-attachment: fixed;
-    background-size: auto auto;
+    background-size: 700px 700px;
     display: grid;
+    top: 0%;
     grid-template-columns: 1fr 1fr;
     min-height: 100vh;
 
