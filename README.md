@@ -7,13 +7,13 @@ Los principales usuarios de este producto son todas las personas que deseen rega
 para alguna ocación especial.
 ### Objetivos de los usuarios en relación a este producto.
 
-El objetivo del usurio con esta interfaz es poder realizar la compra de un regalo personalizado con su tarjeta de credito
-Mediante esta app el usuario resuelve el problema de tener que ir a la tienda fisica a realizar su compra, lo cual le ahorra 
+El objetivo del usuario con esta interfaz es poder realizar la compra de un regalo personalizado con su tarjeta de credito
+mediante esta app el usuario resuelve el problema de tener que ir a la tienda fisica a realizar su compra, lo cual le ahorra 
 tiempo y le permite resolver rápidamente en caso de haber olvidado una fecha importante. 
 
 ### Prototipo. 
 
-AL inicio de este proyecto la idea era crear una app en donde el usuario viera una pagina de bienvenida 
+Al inicio de este proyecto la idea era crear una app en donde el usuario viera una pagina de bienvenida 
 
 <img src="./images/Bienvenido.png">
 
