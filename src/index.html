@@ -54,25 +54,25 @@
     <div class="form" id="form">
       <div class="formulario">
         <label for="input-name" class="label">Nombre de la Tarjeta </label>
-        <input type="text" class="input" id="input-name" placeholder="Mafer Rodriguez" required autofocus>
+        <input type="text" class="input" id="input-name" placeholder="Mafer Rodriguez" autofocus >
       </div>
 
       <div class="formulario">
         <label for="input-number" class="label">Número de Tarjeta </label>
-        <input type="text" class="input" id="input-number" placeholder="0000 0000 0000 0000" required minlength="1"
-          maxlength="16" onkeypress="return valideKey(event);" required>
+        <input type="text" class="input" id="input-number" placeholder="0000 0000 0000 0000"  onkeypress="return valideKey(event);" 
+        minlength="11" maxlength="16">
       </div>
 
       <div class="formularioDoble">
         <div class="rows">
           <label for="input-month" class="label">Exp. Date (MM/YY) </label>
           <div class="columns">
-            <input type="text" class="input" id="input-month" placeholder="MM" minlength="1" maxlength="2" required>
-            <input type="text" class="input" id="input-year" placeholder="YY" minlength="1" maxlength="2" required>
+            <input type="text" class="input" id="input-month" placeholder="MM" minlength="1" maxlength="2">
+            <input type="text" class="input" id="input-year" placeholder="YY" minlength="1" maxlength="2">
             <label for="input-cvc" class="label"> CVC </label>
-            <input type="text" class="input" id="input-cvc" placeholder="123" minlength="1" maxlength="3" required>
+            <input type="text" class="input" id="input-cvc" placeholder="123" minlength="1" maxlength="3" >
             <div class="boton">
-              <button class="button" type="submit" id="enviar">Confirmar</button>
+              <button class="button" type="submit" id="enviar" value="submit" name="enviar">Confirmar</button>
             </div>
           </div>
 
@@ -80,9 +80,7 @@
       </div>
     </div>
 
-    </div>
-
-  
+      
   </main>
   <script src="index.js" type="module"></script>
 </body>

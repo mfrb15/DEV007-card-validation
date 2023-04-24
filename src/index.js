@@ -1,5 +1,4 @@
 import validator from './validator.js';
-console.log(validator);
 //Declarando variables. 
 let creditCardNumber = "";
 const botonEnviar = document.getElementById("enviar");
@@ -16,32 +15,41 @@ const nombredeTarjeta = document.getElementById("nombreDeTarjeta");
 botonEnviar.addEventListener("click", () => {
   //Declarando una variable dentro de una función y extrayendo su valor. (ingresado por el usuario)
   creditCardNumber = document.getElementById("input-number").value;
-  console.log(creditCardNumber); //mostrando este valor en la consola. 
+  // console.log(creditCardNumber); //mostrando este valor en la consola. 
+
 
   // Declarando la variable tarjeta validada para poder reversar su numero y usarlo para
   //reversarlo con el método .reverse que esta en validator.
-  let cardValid = validator.isValid(creditCardNumber);
-  if (cardValid == true) {
-    h1tdc.innerHTML = "Resultado de la operación";
-    sectionPadre.innerHTML = `<section class="maskify">
-      <div class="pagoProcesado" id="pagoAprobado">
-      <img src="../images/aprobado.png" class="iconoAprobado" alt="icono de Aprobado">
-      <p class="mensajeGraciasporsucompra">¡Gracias por tu compra!</p>
-      <p id="input-number-maskify"></p>
-      </section>`;
-    let maskify = validator.maskify(creditCardNumber);
-    const pCardNumber = document.getElementById("input-number-maskify");
-    pCardNumber.innerHTML = "Operación validada para tu tarjeta " + maskify;
-    console.log(maskify);
-  } else {
-    h1tdc.innerHTML = "Resultado de la operación";
-    sectionPadre.innerHTML = `<section class="maskify">
-      <div class="pagoProcesado" id="pagoAprobado">
-      <img src="../images/rechazado.png" class="iconoAprobado" alt="icono de Aprobado">
-      <p class="mensajeGraciasporsucompra">¡Error, Tarjeta Inválida!</p>
-      <p id="input-number-maskify"></p>
-      </section>`;
+  const cardValid = validator.isValid(creditCardNumber);
+
+  if (inputYear.value, inputMonth.value, inputName.value, inputNumber.value === "") {
+    alert("Debe rellenar todos los campos");
   }
+  else {
+    if (cardValid === true) {
+      h1tdc.innerHTML = "Resultado de la operación";
+      sectionPadre.innerHTML = `<section class="maskify">
+   <div class="pagoProcesado" id="pagoAprobado">
+   <img src="../images/aprobado.png" class="iconoAprobado" alt="icono de Aprobado">
+   <p class="mensajeGraciasporsucompra">¡Gracias por tu compra!</p>
+   <p id="input-number-maskify"></p>
+   </section>`;
+      const maskify = validator.maskify(creditCardNumber);
+      const pCardNumber = document.getElementById("input-number-maskify");
+      pCardNumber.innerHTML = "Operación validada para tu tarjeta " + maskify;
+      // console.log(maskify);
+    } else {
+      h1tdc.innerHTML = "Resultado de la operación";
+      sectionPadre.innerHTML = `<section class="maskify">
+   <div class="pagoProcesado" id="pagoAprobado">
+   <img src="../images/rechazado.png" class="iconoAprobado" alt="icono de Aprobado">
+   <p class="mensajeGraciasporsucompra">¡Error, Tarjeta Inválida!</p>
+   <p id="input-number-maskify"></p>
+   </section>`;
+    }
+
+  }
+
 }
 )
 // tarjeta valida
@@ -50,8 +58,6 @@ botonEnviar.addEventListener("click", () => {
 // Logica para Css
 
 //interaccion tarjeta
-
-
 
 inputName.addEventListener("input", () => {
   nombredeTarjeta.innerText = inputName.value;
@@ -69,21 +75,18 @@ inputNumber.addEventListener("input", () => {
 )
 
 inputMonth.addEventListener("input", () => {
-  mes.innerText = inputMonth.value;
   if (inputMonth.value.length === 0) {
-    mes.innerText = "00";
+    inputMonth.innerText = "00";
   }
 }
 )
 
 inputYear.addEventListener("input", () => {
-  año.innerText = inputYear.value;
   if (inputYear.value.length === 0) {
-    año.innerText = "00";
+    inputYear.innerText = "00";
   }
 }
 )
-
 
 
 
