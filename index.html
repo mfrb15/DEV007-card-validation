@@ -1,68 +1,90 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
 
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>Tarjeta de crédito válida</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="text/javascript">
+    function valideKey(evt) {
+      var code = (evt.which) ? evt.which : evt.keyCode;
+      if (code == 8) {
+        return true;
+      } else if (code >= 48 && code <= 57) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+  </script>
+</head>
 
-    <h1> Ingrese su tarjeta de credito  </h1>
-    <section class="tarjetaDiseño">
-    <div class="tdcFront">
-      <img src="../images/tdcfront.jpg" alt="Frente de la tarjeta">
-      <div class="datosFrenteTarjeta">
-        <p class="numerodeTarjeta">0000 0000 0000 0000</p>
-          <div class="nombreDeTarjetaYDate"> 
-           <p class="nombreDeTarjeta">Mafer Rodriguez</p>
-           <p class="fechaDeTarjeta">00/00</p>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div>
-        <img src="../images/tdcback.jpg" alt="Dorso de Tarjeta">
-        <div class="tdcBack">
-          <p class="cvcTarjeta"> 000 </p>
-        </div>
-      </div>
-    </div>
-    </section>
+<body>
 
+  <h1 id="h1Tdc"> Ingrese su tarjeta de credito </h1>
 
-    <section class="form-group">
-          <label for="input-name">Nombre de la Tajeta </label>
-          <input type="text" class="input" id="input-name" placeholder="MAFER RODRIGUEZ"> 
-        </section>
-        
-        <section class="form-group">
-        <label for="input-number">Número de Tarjeta </label>
-        <input type="text" class="input" id="input-number" placeholder="0000 0000 0000 0000">
-      </section>
-
-
-      <section class="form-group">
-        <div>
-          <label for="input-month" class="label">Exp. Date (MM/YY) </label>
-          <div> 
-            <input type="text" class="input" id="input-month" placeholder="MM">
-            <input type="text" class="input" id="input-year" placeholder="YY">
+  <main id="padre" class="diseñoMain">
+    <!-- imagen de frente de tarjeta -->
+    <div class="card">
+      <div class="tdcFront">
+        <img src="../images/tdcfront2.jpg" alt="Frente de la tarjeta">
+        <div class="datosFrenteTarjeta">
+          <p class="numerodeTarjeta" id="numerodeTarjeta">0000 0000 0000 0000</p>
+          <div class="nombreDeTarjetaYDate">
+            <p class="nombreDeTarjeta" id="nombreDeTarjeta">Mafer Rodriguez </p>
+            <p class="fechaDeTarjeta">
+              <span id="mes"> 00 </span> /<span id="año">00</span>
+            </p>
           </div>
         </div>
-            <div>
-              <label for="input-cvc" class="label"> CVC </label>
-              <input type="text" class="input" id="input-cvc" placeholder="123">
-            </div>
-      </section>
-      <section class="form-group">
-        <button class="button" type="submit" id="enviar">Confirmar</button>
-      </section>
-    </section>
+      </div>
+      <!-- imagen de reverso de tarjeta -->
+      <div class="tdcBack">
+        <img src="../images/tdcback.jpg" alt="Dorso de Tarjeta">
+        <div class="tdcBackData">
+          <p class="cvcTarjeta" id="cvcTarjeta"> 000 </p>
+        </div>
+      </div>
 
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
-  </body>
+    </div>
+
+
+    <!-- FORMULARIO -->
+
+    <div class="form" id="form">
+      <div class="formulario">
+        <label for="input-name" class="label">Nombre de la Tarjeta </label>
+        <input type="text" class="input" id="input-name" placeholder="Mafer Rodriguez" autofocus >
+      </div>
+
+      <div class="formulario">
+        <label for="input-number" class="label">Número de Tarjeta </label>
+        <input type="text" class="input" id="input-number" placeholder="0000 0000 0000 0000"  onkeypress="return valideKey(event);" 
+        minlength="11" maxlength="16">
+      </div>
+
+      <div class="formularioDoble">
+        <div class="rows">
+          <label for="input-month" class="label">Exp. Date (MM/YY) </label>
+          <div class="columns">
+            <input type="text" class="input" id="input-month" placeholder="MM" minlength="1" maxlength="2">
+            <input type="text" class="input" id="input-year" placeholder="YY" minlength="1" maxlength="2">
+            <label for="input-cvc" class="label"> CVC </label>
+            <input type="text" class="input" id="input-cvc" placeholder="123" minlength="1" maxlength="3" >
+            <div class="boton">
+              <button class="button" type="submit" id="enviar" value="submit" name="enviar">Confirmar</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+      
+  </main>
+  <script src="index.js" type="module"></script>
+</body>
+
+<footer> </footer>
+
 </html>

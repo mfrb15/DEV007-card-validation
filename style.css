@@ -1,16 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
-
-
-
-
-body { background-image: url("C:\Users\mrodr\OneDrive\Escritorio\DEV007-card-validation\fondo.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size:auto;
-    background-position: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Caveat', cursive;
+    font-weight: 500;
 }
+h1{
+    font-size: 100px;
+    color: rgba(231, 122, 174, 0.82);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body {
+    background-image: url("./images/fondo.jpg");
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+    background-position: cover;
+    background-attachment: fixed; 
+}
+
+.diseñoMain {
+    background-image: url("./images/logogiftamor.png");
+    background-repeat: no-repeat;
+    background-position: relative;
+    background-attachment: fixed;
+    background-size: 700px 700px;
+    display: grid;
+    top: 0%;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+
+}
+
+div {
+    height: 1000px;
+    width: 500px;
+    position: relative;
+
+}
+
+.card {
+   left: 50px;
+    padding: 10rem 40% 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: brown; */
+    top: 20rem;
+    height: 500px;
+    width: 800px;
+}
+
+.tdcBack {
+    align-self: start;
+    height: 500px;
+    width: 800px;
+    position: relative;
+    top: 20rem;
+    order: 1;
+}
+
+.tdcFront {
+    height: 500px;
+    width: 800px;
+    align-self: end;
+    margin-top: 10rem;
+    left: 20rem;
+    order: 2;
+ }
+
+
+
+.tdcBackData {
+    position: absolute;
+    color: white;
+    /* display: flex;
+align-items: center;
+justify-content: end; */
+    font-size: 50px;
+    top: 140px;
+    left: 550px;
+
+}
+
+.nombreDeTarjetaYDate {
+    height: 500px;
+    width: 700px;
+    position: relative;
+    inset: 0;
+    color: white;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: start;
+    font-size: 60px;
+    top: -190px;
+    right: 200px;
+    left: 20px;
+    /* background-color: brown; */
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.numerodeTarjeta {
+    height: 70px;
+    width: 700px;
+    /* background-color: brown; */
+    color: white;
+    position: relative;
+    inset: 0;
+    display: flex;
+    align-items: start;
+    font-size: 70px;
+    top: -210px;
+    right: 200px;
+    left: 20px;
+    letter-spacing: 7px;
+}
+
+.form {
+    top: 20rem;
+    left: 10rem;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+}
+
+
+.label {
+
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
 .input {
-    background-color: aqua;
+    border: 4px solid gray;
+    padding: 1rem;
+    font-size: 50px;
+    text-align: justify;
+    letter-spacing: 2.5px;
+    border-radius: 0.5rem;
+}
+
+.input::placeholder {
+
+    color: rgba(137, 43, 226, 0.244);
+}
+
+.button {
+    height: 100px;
+    width: 250px;
+    font-size: 50px;
+    text-align: center;
+    background-color: rgba(161, 77, 239, 0.368);
+    padding-block: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.boton {
+
+    top: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .mensajeGraciasporsucompra{
+
+font-size: 50px;
+} */
+
+.pagoProcesado{
+    font-size: 60px;
+    color: white;
     
 }
+
+
+.iconoAprobado{
+    width: 200px;
+    height: 200px;
+}
+
+
+
+
+
+
 
