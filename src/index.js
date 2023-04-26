@@ -10,7 +10,10 @@ const inputMonth = document.getElementById("input-month");
 const inputYear = document.getElementById("input-year");
 const numerodeTarjeta = document.getElementById("numerodeTarjeta");
 const nombredeTarjeta = document.getElementById("nombreDeTarjeta");
-
+const inputCvc = document.getElementById("input-cvc");
+const mesTarjeta = document.getElementById("mes");
+const añoTarjeta = document.getElementById("año");
+const cvcTarjeta = document.getElementById("cvcTarjeta");
 //aplicando una función 
 botonEnviar.addEventListener("click", () => {
   //Declarando una variable dentro de una función y extrayendo su valor. (ingresado por el usuario)
@@ -56,7 +59,6 @@ botonEnviar.addEventListener("click", () => {
 //4532314509432211
 
 // Logica para Css
-
 //interaccion tarjeta
 
 inputName.addEventListener("input", () => {
@@ -75,6 +77,7 @@ inputNumber.addEventListener("input", () => {
 )
 
 inputMonth.addEventListener("input", () => {
+  mesTarjeta.innerText = inputMonth.value
   if (inputMonth.value.length === 0) {
     inputMonth.innerText = "00";
   }
@@ -82,6 +85,7 @@ inputMonth.addEventListener("input", () => {
 )
 
 inputYear.addEventListener("input", () => {
+  añoTarjeta.innerText = inputYear.value
   if (inputYear.value.length === 0) {
     inputYear.innerText = "00";
   }
@@ -89,4 +93,10 @@ inputYear.addEventListener("input", () => {
 )
 
 
-
+inputCvc.addEventListener("input", () => {
+  cvcTarjeta.innerText = inputCvc.value
+  if (inputCvc.value.length === 0) {
+    inputCvc.innerText = "00";
+  }
+}
+)
