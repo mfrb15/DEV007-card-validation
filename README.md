@@ -28,7 +28,7 @@ donde podría ingresar su tarjeta de crédito para realizar su compra
 
 De esta forma el usuario ingresaría su tarjeta y podría valida si el pago con su tarjeta es válido o inválido.
 
-### Desiciones de diseño
+### Decisiones de diseño
 Con el transcurrir de los dias se tomó la decisión de modificar la interfaz, debido a que se priorizaron los objetivos de aprendizaje propuestos 
 en el proyecto Card Validation. 
 
